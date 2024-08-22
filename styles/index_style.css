@@ -225,3 +225,110 @@ transition: all .4s;
 }
 
 
+/* Base styles remain the same */
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    font-size: 14px; 
+  }
+
+  .header {
+    height: 80vh; /* Reduced height for mobile */
+    background-position: center; /* Adjust background position */
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%); /* Adjust clip-path */
+  }
+
+  .logo-box {
+    top: 20px;
+    left: 20px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .text-box {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heading-primary-main {
+    font-size: 36px; /* Smaller font size for mobile */
+    letter-spacing: 20px;
+  }
+
+  .heading-primary-sub {
+    font-size: 16px; /* Smaller font size for mobile */
+    letter-spacing: 10px;
+  }
+
+  .section {
+    padding: 50px 0; /* Reduced padding for mobile */
+  }
+
+  .section-content {
+    padding: 20px; /* Reduced padding */
+  }
+
+  .section-heading {
+    font-size: 28px; /* Smaller font size */
+  }
+
+  .section-text {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .btn {
+    padding: 10px 30px; /* Adjust padding */
+    font-size: 14px; /* Smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 70vh; /* Further reduced height for very small screens */
+  }
+
+  .logo-box {
+    top: 10px;
+    left: 10px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .heading-primary-main {
+    font-size: 28px; /* Further reduced font size */
+    letter-spacing: 15px;
+  }
+
+  .heading-primary-sub {
+    font-size: 14px; /* Further reduced font size */
+    letter-spacing: 5px;
+  }
+
+  .section {
+    padding: 40px 0; /* Further reduced padding */
+  }
+
+  .section-content {
+    padding: 15px; /* Further reduced padding */
+  }
+
+  .section-heading {
+    font-size: 24px; /* Further reduced font size */
+  }
+
+  .section-text {
+    font-size: 14px; /* Further reduced font size */
+  }
+
+  .btn {
+    padding: 8px 20px; /* Further reduced padding */
+    font-size: 12px; /* Further reduced font size */
+  }
+}
