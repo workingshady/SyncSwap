@@ -3,34 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <meta name="description" content="SyncSwap offers advanced video manipulation technology allowing you to seamlessly remove individuals from videos for privacy, focus, or creative purposes.">
+  <title>SyncSwap - Video Manipulation Redefined</title>
   <link rel="stylesheet" href="./styles/index_style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar">
+    <img src="./asserts/images/AI__3_-removebg-preview.png" alt="SyncSwap Logo" class="logo">
+    <button class="navbar-toggle" aria-label="Toggle navigation">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+    <ul class="navbar-menu" role="navigation" aria-label="Main Menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
   <header class="header">
-    <div class="logo-box">
-      <img src="./asserts/images/AI__3_-removebg-preview.png" alt="logo" class="logo">
-    </div>
     <div class="text-box">
       <h1 class="heading-primary">
         <span class="heading-primary-main">SyncSwap</span>
-        <span class="heading-primary-sub">Drag, Select, and Wow!</span>
-      </h1> 
-      <a href="#" class="btn btn-white">Get Started</a>
+        <span class="heading-primary-sub">Control Reality in Video</span>
+      </h1>
+      <a href="#features" class="btn btn-white">Explore Features</a>
     </div>
   </header>
   
-  <!-- New Section -->
-  <section class="section">
+  <section id="features" class="section">
     <div class="section-content">
-      <h2 class="section-heading">Discover the Future</h2>
-      <p class="section-text">Explore our latest features and innovations designed to enhance your productivity and streamline your workflow. Join us on this journey to make work more efficient and enjoyable.</p>
+      <h2 class="section-heading">Powerful Video Manipulation</h2>
+      <p class="section-text">With SyncSwap, you can drag a video featuring multiple people, select any individual, and seamlessly remove them from the scene. Whether it’s for privacy, focus, or creative purposes, our advanced computer vision technology makes it effortless.</p>
+      <a href="#" class="btn btn-white">Try it Now</a>
+    </div>
+  </section>
+  
+  <section id="about" class="section">
+    <div class="section-content">
+      <h2 class="section-heading">About SyncSwap</h2>
+      <p class="section-text">SyncSwap is at the forefront of video editing technology, offering users unprecedented control over their content. Our AI-driven solution ensures that the removal process is smooth, realistic, and easy to use, empowering creators, editors, and businesses alike.</p>
       <a href="#" class="btn btn-white">Learn More</a>
     </div>
   </section>
+  
+  <section id="contact" class="section">
+    <div class="section-content">
+      <h2 class="section-heading">Get in Touch</h2>
+      <p class="section-text">Interested in learning more or have a specific project in mind? Reach out to us, and let’s discuss how SyncSwap can help you achieve your goals.</p>
+      <a href="#" class="btn btn-white">Contact Us</a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <p class="footer-text">&copy; 2024 SyncSwap. All rights reserved.</p>
+  </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbarToggle = document.querySelector('.navbar-toggle');
+      const navbarMenu = document.querySelector('.navbar-menu');
+
+      navbarToggle.addEventListener('click', function() {
+        navbarMenu.classList.toggle('active');
+        navbarToggle.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
